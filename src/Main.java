@@ -3,7 +3,7 @@ public class Main {
         boolean attempt = false;
 
         for (int i = 0; !attempt && (i < 3); ++i) {
-            try ( Robot robot = new Robot(1, 2)) {
+            try (Robot robot = new Robot(1, 2)) {
                 RobotConnection connection = robot.getConnection();
 
                 if (connection != null) {
